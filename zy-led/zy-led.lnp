@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"zy-led\startup_stm32f103xb.o"
+"zy-led\main.o"
+"zy-led\stm32f1xx_it.o"
+"zy-led\stm32f1xx_hal_msp.o"
+"zy-led\stm32f1xx_hal_gpio_ex.o"
+"zy-led\stm32f1xx_hal_tim.o"
+"zy-led\stm32f1xx_hal_tim_ex.o"
+"zy-led\stm32f1xx_hal_uart.o"
+"zy-led\stm32f1xx_hal.o"
+"zy-led\stm32f1xx_hal_rcc.o"
+"zy-led\stm32f1xx_hal_rcc_ex.o"
+"zy-led\stm32f1xx_hal_gpio.o"
+"zy-led\stm32f1xx_hal_dma.o"
+"zy-led\stm32f1xx_hal_cortex.o"
+"zy-led\stm32f1xx_hal_pwr.o"
+"zy-led\stm32f1xx_hal_flash.o"
+"zy-led\stm32f1xx_hal_flash_ex.o"
+"zy-led\stm32f1xx_hal_exti.o"
+"zy-led\system_stm32f1xx.o"
+--strict --scatter "zy-led\zy-led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "zy-led.map" -o zy-led\zy-led.axf
